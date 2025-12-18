@@ -25,6 +25,7 @@ Route::group([
 ], function(){
     Route::post('login', [AuthenticateController::class, 'login'])->name('login');
     Route::post('register', [AuthenticateController::class, 'register'])->name('register');
+    Route::post('logout', [AuthenticateController::class, 'logout'])->name('logout')->middleware('auth:sanctum');
     Route::get('products', [ProductApiController::class, 'index'])->name('products.index');
     Route::get('products/{id}', [ProductApiController::class, 'show'])->name('products.show');
 
