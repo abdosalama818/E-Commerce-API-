@@ -9,13 +9,11 @@
 
 ## About Project
 this demo project that semulate E-commerce that i handel add product by seeder and [manage card and order] 
-
-
 ## installation
 1. Clone the repository:
 2. composer install
-3. cp .env.example .env 
+3. cp .env.example .env
 4. php artisan key:generate
-5-php artisan migrate --seed
+5. php artisan migrate --seed
 
 
